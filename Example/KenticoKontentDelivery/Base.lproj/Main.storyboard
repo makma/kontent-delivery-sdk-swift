@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAh-AO-x8f">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAh-AO-x8f">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +26,7 @@
         <!--Cafes-->
         <scene sceneID="KAm-Et-Lst">
             <objects>
-                <tableViewController storyboardIdentifier="CafesViewController" id="wMJ-k7-9dR" customClass="CafesViewController" customModule="KenticoCloud_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CafesViewController" id="wMJ-k7-9dR" customClass="CafesViewController" customModule="KenticoKontentDelivery_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="287" sectionHeaderHeight="28" sectionFooterHeight="28" id="m9X-3f-x8Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +70,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cafeCell" rowHeight="287" id="bHw-sY-fSu" customClass="CafeTableViewCell" customModule="KenticoCloud_Example">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cafeCell" rowHeight="287" id="bHw-sY-fSu" customClass="CafeTableViewCell" customModule="KenticoKontentDelivery_Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="166" width="375" height="287"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bHw-sY-fSu" id="YBL-0H-K2Y">
@@ -129,7 +128,7 @@
                         <attributedString key="attributedTitle">
                             <fragment content="Refreshing...">
                                 <attributes>
-                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <font key="NSFont" metaFont="message" size="11"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -149,7 +148,7 @@
         <!--Cafe Detail View Controller-->
         <scene sceneID="0FU-TK-2uC">
             <objects>
-                <viewController id="WDo-pJ-meY" customClass="CafeDetailViewController" customModule="KenticoCloud_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WDo-pJ-meY" customClass="CafeDetailViewController" customModule="KenticoKontentDelivery_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yys-u8-EiF"/>
                         <viewControllerLayoutGuide type="bottom" id="gfd-eb-kSb"/>
@@ -159,20 +158,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationsHeader" translatesAutoresizingMaskIntoConstraints="NO" id="MzK-W4-EL1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                <rect key="frame" x="0.0" y="-20" width="375" height="236"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MzK-W4-EL1" secondAttribute="height" multiplier="375:236" id="aDy-QG-6kp"/>
                                 </constraints>
                             </imageView>
                             <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-ZE-Dzr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+                                <rect key="frame" x="0.0" y="-20" width="375" height="236"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="oIc-ZE-Dzr" secondAttribute="height" multiplier="375:236" id="Isr-hs-xot"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-bd-IF3">
-                                <rect key="frame" x="10" y="31" width="111" height="38"/>
+                                <rect key="frame" x="10" y="11" width="111" height="38"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.38823529410000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="3Ix-sc-Mcb"/>
@@ -188,37 +187,37 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sydney - Dee Why" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UW-XH-ycy">
-                                <rect key="frame" x="9" y="112" width="350" height="36"/>
+                                <rect key="frame" x="9" y="92" width="350" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sydney@localhost.local" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et5-0c-tyL">
-                                <rect key="frame" x="9" y="145" width="350" height="21"/>
+                                <rect key="frame" x="9" y="125" width="350" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="141 Sydney Rd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmn-eD-E3T">
-                                <rect key="frame" x="9" y="166" width="350" height="21"/>
+                                <rect key="frame" x="9" y="146" width="350" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sydney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD2-TO-ofN">
-                                <rect key="frame" x="9" y="186" width="350" height="20"/>
+                                <rect key="frame" x="9" y="166" width="350" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="555 111 222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvI-0O-3a5">
-                                <rect key="frame" x="9" y="208" width="350" height="21"/>
+                                <rect key="frame" x="9" y="188" width="350" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Y0z-N5-jbZ">
-                                <rect key="frame" x="0.0" y="233" width="375" height="385"/>
+                                <rect key="frame" x="0.0" y="213" width="375" height="405"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -274,7 +273,7 @@
         <!--Articles-->
         <scene sceneID="gh6-ck-ZWx">
             <objects>
-                <tableViewController storyboardIdentifier="ArticlesViewController" id="S20-Zv-d5o" customClass="ArticlesViewController" customModule="KenticoCloud_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ArticlesViewController" id="S20-Zv-d5o" customClass="ArticlesViewController" customModule="KenticoKontentDelivery_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="308" sectionHeaderHeight="28" sectionFooterHeight="28" id="0bp-7g-7ol">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,7 +325,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="articleCell" rowHeight="308" id="FRh-i5-oQd" customClass="ArticleTableViewCell" customModule="KenticoCloud_Example" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="articleCell" rowHeight="308" id="FRh-i5-oQd" customClass="ArticleTableViewCell" customModule="KenticoKontentDelivery_Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="184" width="375" height="308"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FRh-i5-oQd" id="NBZ-48-oIu">
@@ -399,7 +398,7 @@
                         <attributedString key="attributedTitle">
                             <fragment content="Refreshing...">
                                 <attributes>
-                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <font key="NSFont" metaFont="message" size="11"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -419,7 +418,7 @@
         <!--Coffees View Controller-->
         <scene sceneID="gmc-fC-J2Q">
             <objects>
-                <tableViewController id="T9p-8C-XJ5" customClass="CoffeesViewController" customModule="KenticoCloud_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="T9p-8C-XJ5" customClass="CoffeesViewController" customModule="KenticoKontentDelivery_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="228" sectionHeaderHeight="28" sectionFooterHeight="28" id="E0V-dD-EP3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,7 +450,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeCell" rowHeight="228" id="Ws8-Vm-uJD" customClass="CoffeeTableViewCell" customModule="KenticoCloud_Example" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeCell" rowHeight="228" id="Ws8-Vm-uJD" customClass="CoffeeTableViewCell" customModule="KenticoKontentDelivery_Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="166" width="375" height="228"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ws8-Vm-uJD" id="4yb-Fc-0JS">
@@ -486,7 +485,7 @@
                                                 <fragment>
                                                     <string key="content">Dipilto is best prepared with a darker roast than most Central American varietals. It has a medium body with an aftertaste that might remind you of a rich, spicy tea. The coffee has excellent depth, strong and rich, but a balanced aroma.</string>
                                                     <attributes>
-                                                        <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                                        <font key="NSFont" metaFont="system" size="16"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -553,7 +552,7 @@
                         <attributedString key="attributedTitle">
                             <fragment content="Refreshing...">
                                 <attributes>
-                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <font key="NSFont" metaFont="message" size="11"/>
                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
@@ -573,7 +572,7 @@
         <!--Coffee Detail View Controller-->
         <scene sceneID="H6E-ea-o6m">
             <objects>
-                <viewController id="8Zw-hp-Euz" customClass="CoffeeDetailViewController" customModule="KenticoCloud_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Zw-hp-Euz" customClass="CoffeeDetailViewController" customModule="KenticoKontentDelivery_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Fn-zb-dGH"/>
                         <viewControllerLayoutGuide type="bottom" id="1uA-5p-EDR"/>
@@ -583,13 +582,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsH-7K-GZB">
-                                <rect key="frame" x="0.0" y="-91" width="375" height="223"/>
+                                <rect key="frame" x="0.0" y="-91" width="375" height="203"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeeBeansHeader" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-71-hFo">
-                                        <rect key="frame" x="0.0" y="-10" width="375" height="181"/>
+                                        <rect key="frame" x="0.0" y="-10" width="375" height="161"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA0-mv-XyL">
-                                        <rect key="frame" x="8" y="113" width="121" height="38"/>
+                                        <rect key="frame" x="8" y="93" width="121" height="38"/>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.38823529410000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="Rj8-FI-0hH"/>
@@ -616,7 +615,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="201" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Pz-yQ-1y4">
-                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.98039215690000003" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="TlC-S4-A6A">
@@ -731,7 +730,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeDescriptionCell" rowHeight="201" id="BWG-P6-0HV" customClass="CoffeeDescriptionViewCell" customModule="KenticoCloud_Example" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeDescriptionCell" rowHeight="201" id="BWG-P6-0HV" customClass="CoffeeDescriptionViewCell" customModule="KenticoKontentDelivery_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="279" width="375" height="201"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BWG-P6-0HV" id="eKi-zC-o7A">
@@ -743,7 +742,7 @@
                                                     <attributedString key="attributedText">
                                                         <fragment content="Coffee description">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -840,7 +839,7 @@
         <!--Article Detail View Controller-->
         <scene sceneID="auE-Bg-TjD">
             <objects>
-                <viewController storyboardIdentifier="ArticleDetailViewController" id="8pU-zA-vJn" customClass="ArticleDetailViewController" customModule="KenticoCloud_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArticleDetailViewController" id="8pU-zA-vJn" customClass="ArticleDetailViewController" customModule="KenticoKontentDelivery_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kf9-Ey-2y0"/>
                         <viewControllerLayoutGuide type="bottom" id="oXG-n8-uyW"/>
@@ -975,11 +974,11 @@ Dry processing, being the least economically demanding, used to be the most wide
         </scene>
     </scenes>
     <resources>
-        <image name="articlesHeader" width="5321" height="3551"/>
+        <image name="articlesHeader" width="2660.5" height="1775.5"/>
         <image name="articlesIcon" width="15" height="20.5"/>
         <image name="cafesIcon" width="20.5" height="20.5"/>
-        <image name="coffeeBeansHeader" width="4889" height="3728"/>
+        <image name="coffeeBeansHeader" width="2444.5" height="1864"/>
         <image name="coffeesIcon" width="20.5" height="20.5"/>
-        <image name="locationsHeader" width="4032" height="3024"/>
+        <image name="locationsHeader" width="2016" height="1512"/>
     </resources>
 </document>
