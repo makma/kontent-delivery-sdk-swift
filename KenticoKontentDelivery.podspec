@@ -36,11 +36,4 @@ Pod::Spec.new do |s|
   s.dependency 'Kanna', '~> 4.0.2'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   
-  # s.resource_bundles = {
-  #   'KenticoKontentDelivery' => ['KenticoKontentDelivery/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
