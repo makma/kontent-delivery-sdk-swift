@@ -106,10 +106,10 @@ class ArticlesViewController: ListingBaseViewController, UITableViewDataSource {
     private func getArticles() {
         self.showLoader(message: "Loading articles...")
         
-        let cloudClient = DeliveryClient.init(projectId: AppConstants.projectId)
+        let deliveryClient = DeliveryClient.init(projectId: AppConstants.projectId)
         let customQuery = "items?system.type=article&order=elements.post_date[desc]"
 
-        cloudClient.getItems(modelType: Article.self, customQuery: customQuery) { (isSuccess, itemsResponse, error) in
+        deliveryClient.getItems(modelType: Article.self, customQuery: customQuery) { (isSuccess, itemsResponse, error) in
 
             if isSuccess {
                 if let articles = itemsResponse?.items {

@@ -115,11 +115,11 @@ class CoffeesViewController: ListingBaseViewController, UITableViewDelegate, UIT
     private func getCoffees() {
         self.showLoader(message: "Loading coffees...")
         
-        let cloudClient = DeliveryClient.init(projectId: AppConstants.projectId)
+        let deliveryClient = DeliveryClient.init(projectId: AppConstants.projectId)
         
         let contentTypeQueryParameter = QueryParameter.init(parameterKey: QueryParameterKey.type, parameterValue: contentType)
         
-        cloudClient.getItems(modelType: Coffee.self, queryParameters: [contentTypeQueryParameter]) { (isSuccess, itemsResponse, error) in
+        deliveryClient.getItems(modelType: Coffee.self, queryParameters: [contentTypeQueryParameter]) { (isSuccess, itemsResponse, error) in
             if isSuccess {
                 if let coffees = itemsResponse?.items {
                     
