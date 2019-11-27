@@ -1,6 +1,6 @@
 //
 //  ImageUrlBuilder.swift
-//  KenticoCloud_Tests
+//  KenticoKontentDelivery_Tests
 //
 //  Created by Jiang Chunhui on 23/3/19.
 //  Copyright © 2019 CocoaPods. All rights reserved.

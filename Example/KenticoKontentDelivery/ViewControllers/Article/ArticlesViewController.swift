@@ -1,6 +1,6 @@
 //
 //  ArticlesViewController.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 21/08/2017.
 //  Copyright © 2017 Kentico Software. All rights reserved.

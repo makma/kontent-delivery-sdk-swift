@@ -1,6 +1,6 @@
 //
 //  QueryBuilder.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Aliaksandr Kantsevoi on 10/12/18.
 //

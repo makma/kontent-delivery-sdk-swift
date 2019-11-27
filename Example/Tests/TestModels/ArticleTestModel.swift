@@ -1,6 +1,6 @@
 //
 //  ArticleTestModel.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 21/09/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.

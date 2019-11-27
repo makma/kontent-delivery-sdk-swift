@@ -1,6 +1,6 @@
 //
 //  InitDeliveryClient.swift
-//  KenticoCloud_Example
+//  KenticoKontentDelivery_Example
 //
 //  Created by Sagar Choudhary on 03/10/19.
 //  Copyright © 2019 CocoaPods. All rights reserved.

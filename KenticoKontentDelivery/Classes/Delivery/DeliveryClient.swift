@@ -1,6 +1,6 @@
 //
 //  DeliveryClient.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 15/08/2017.
 //  Copyright © 2017 Martin Makarsky. All rights reserved.
@@ -220,13 +220,13 @@ public class DeliveryClient {
                 if let value = response.result.value {
                     let deliveryItems = value
                     if self.isDebugLoggingEnabled {
-                        print("[Kentico Cloud] Getting items action has succeeded. Received \(String(describing: deliveryItems.items?.count)) items.")
+                        print("[Kentico Kontent Delivery] Getting items action has succeeded. Received \(String(describing: deliveryItems.items?.count)) items.")
                     }
                     completionHandler(true, deliveryItems, nil)
                 }
             case .failure(let error):
                 if self.isDebugLoggingEnabled {
-                    print("[Kentico Cloud] Getting items action has failed. Check requested URL: \(url)")
+                    print("[Kentico Kontent Delivery] Getting items action has failed. Check requested URL: \(url)")
                 }
                 completionHandler(false, nil, error)
             }
@@ -240,13 +240,13 @@ public class DeliveryClient {
             case .success:
                 if let value = response.result.value {
                     if self.isDebugLoggingEnabled {
-                        print("[Kentico Cloud] Getting item action has succeeded.")
+                        print("[Kentico Kontent Delivery] Getting item action has succeeded.")
                     }
                     completionHandler(true, value, nil)
                 }
             case .failure(let error):
                 if self.isDebugLoggingEnabled {
-                    print("[Kentico Cloud] Getting items action has failed. Check requested URL: \(url)")
+                    print("[Kentico Kontent Delivery] Getting items action has failed. Check requested URL: \(url)")
                 }
                 completionHandler(false, nil, error)
             }
@@ -260,13 +260,13 @@ public class DeliveryClient {
             case .success:
                 if let value = response.result.value {
                     if self.isDebugLoggingEnabled {
-                        print("[Kentico Cloud] Getting content types action has succeeded.")
+                        print("[Kentico Kontent Delivery] Getting content types action has succeeded.")
                     }
                     completionHandler(true, value, nil)
                 }
             case .failure(let error):
                 if self.isDebugLoggingEnabled {
-                    print("[Kentico Cloud] Getting content types action has failed. Check requested URL: \(url)")
+                    print("[Kentico Kontent Delivery] Getting content types action has failed. Check requested URL: \(url)")
                 }
                 completionHandler(false, nil, error)
             }
@@ -280,13 +280,13 @@ public class DeliveryClient {
             case .success:
                 if let value = response.result.value {
                     if self.isDebugLoggingEnabled {
-                        print("[Kentico Cloud] Getting content type action has succeeded.")
+                        print("[Kentico Kontent Delivery] Getting content type action has succeeded.")
                     }
                     completionHandler(true, value, nil)
                 }
             case .failure(let error):
                 if self.isDebugLoggingEnabled {
-                    print("[Kentico Cloud] Getting content types action has failed. Check requested URL: \(url)")
+                    print("[Kentico Kontent Delivery] Getting content types action has failed. Check requested URL: \(url)")
                 }
                 completionHandler(false, nil, error)
             }
@@ -300,13 +300,13 @@ public class DeliveryClient {
             case .success:
                 if let value = response.result.value {
                     if self.isDebugLoggingEnabled {
-                        print("[Kentico Cloud] Getting taxonomies action has succeeded.")
+                        print("[Kentico Kontent Delivery] Getting taxonomies action has succeeded.")
                     }
                     completionHandler(true, value, nil)
                 }
             case .failure(let error):
                 if self.isDebugLoggingEnabled {
-                    print("[Kentico Cloud] Getting taxonomies action has failed. Check requested URL: \(url)")
+                    print("[Kentico Kontent Delivery] Getting taxonomies action has failed. Check requested URL: \(url)")
                 }
                 completionHandler(false, [], error)
             }
@@ -320,13 +320,13 @@ public class DeliveryClient {
             case .success:
                 if let value = response.result.value {
                     if self.isDebugLoggingEnabled {
-                        print("[Kentico Cloud] Getting taxonomies action has succeeded.")
+                        print("[Kentico Kontent Delivery] Getting taxonomies action has succeeded.")
                     }
                     completionHandler(true, value, nil)
                 }
             case .failure(let error):
                 if self.isDebugLoggingEnabled {
-                    print("[Kentico Cloud] Getting taxonomies action has failed. Check requested URL: \(url)")
+                    print("[Kentico Kontent Delivery] Getting taxonomies action has failed. Check requested URL: \(url)")
                 }
                 completionHandler(false, nil, error)
             }
@@ -410,7 +410,7 @@ public class DeliveryClient {
         // Check override from property list first
         if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
             if let propertyList = NSDictionary(contentsOfFile: path) {
-                if let customEndpoint = propertyList["KenticoCloudDeliveryEndpoint"] {
+                if let customEndpoint = propertyList["KenticoKontentDeliveryEndpoint"] {
                     endpoint = customEndpoint as? String
                     return endpoint!
                 }
@@ -419,9 +419,9 @@ public class DeliveryClient {
         
         // Request preview api in case there is an previewApiKey
         if previewApiKey == nil {
-            return CloudConstants.liveDeliverEndpoint
+            return KontentConstants.liveDeliverEndpoint
         } else {
-            return CloudConstants.previewDeliverEndpoint
+            return KontentConstants.previewDeliverEndpoint
         }
         
     }
@@ -439,7 +439,7 @@ public class DeliveryClient {
             headers["authorization"] = "Bearer " + apiKey
         }
         
-        headers["X-KC-SDKID"] = "cocoapods.org;KenticoCloud;1.2.0"
+        headers["X-KC-SDKID"] = "cocoapods.org;KenticoKontentDelivery;2.0.0"
         
         return headers
     }

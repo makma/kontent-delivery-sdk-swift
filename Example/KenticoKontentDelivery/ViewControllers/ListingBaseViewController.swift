@@ -1,6 +1,6 @@
 //
 //  ListingBaseViewController.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 01/10/2017.
 //  Copyright © 2017 Kentico Software. All rights reserved.

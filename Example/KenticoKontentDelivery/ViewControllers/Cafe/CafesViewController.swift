@@ -1,6 +1,6 @@
 //
 //  CafesViewController.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by martinmakarsky@gmail.com on 08/16/2017.
 //  Copyright © 2017 Kentico Software. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  NumberElement.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 11/10/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.

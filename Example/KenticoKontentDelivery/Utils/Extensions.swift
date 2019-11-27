@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 26/09/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.

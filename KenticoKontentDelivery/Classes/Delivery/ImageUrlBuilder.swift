@@ -1,6 +1,6 @@
 //
 //  ImageUrlBuilder.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Jiang Chunhui on 20/3/19.
 //

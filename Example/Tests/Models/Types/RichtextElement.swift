@@ -1,6 +1,6 @@
 //
 //  RichtextElement.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 10/11/17.
 //  Copyright © 2017 CocoaPods. All rights reserved.

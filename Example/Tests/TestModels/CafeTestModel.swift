@@ -1,6 +1,6 @@
 //
 //  CafeModel.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 04/09/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.

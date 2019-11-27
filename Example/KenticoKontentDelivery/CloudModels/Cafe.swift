@@ -1,6 +1,6 @@
 //
-//  CafeCloudModel.swift
-//  KenticoCloud
+//  CafeKontentModel.swift
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 15/08/2017.
 //  Copyright © 2017 Kentico Software. All rights reserved

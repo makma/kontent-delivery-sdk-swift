@@ -1,6 +1,6 @@
 //
 //  GetItemsSecured.swift
-//  KenticoCloud_Tests
+//  KenticoKontentDelivery_Tests
 //
 //  Created by Martin Makarsky on 18/10/2018.
 //  Copyright © 2018 CocoaPods. All rights reserved.

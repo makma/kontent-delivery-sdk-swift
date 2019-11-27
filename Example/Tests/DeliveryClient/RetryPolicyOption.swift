@@ -1,6 +1,6 @@
 //
 //  RetryPolicyOption.swift
-//  KenticoCloud_Example
+//  KenticoKontentDelivery_Example
 //
 //  Created by Jiang Chunhui on 19/2/19.
 //  Copyright © 2019 CocoaPods. All rights reserved.

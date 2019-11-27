@@ -1,6 +1,6 @@
 //
 //  GetContentTypes.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 13/10/2017.
 //  Copyright © 2017 CocoaPods. All rights reserved.

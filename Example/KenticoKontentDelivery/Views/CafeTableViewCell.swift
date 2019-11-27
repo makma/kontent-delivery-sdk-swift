@@ -1,6 +1,6 @@
 //
 //  CafeCellTableViewCell.swift
-//  KenticoCloud
+//  KenticoKontentDelivery
 //
 //  Created by Martin Makarsky on 16/08/2017.
 //  Copyright © 2017 Kentico Software. All rights reserved..
