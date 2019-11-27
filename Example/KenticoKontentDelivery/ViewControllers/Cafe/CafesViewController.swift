@@ -114,14 +114,22 @@ class CafesViewController: ListingBaseViewController, UITableViewDataSource {
             }
             
             DispatchQueue.main.async {
-                self.finishLoadingItems()
+                if #available(iOS 10.0, *) {
+                    self.finishLoadingItems()
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
     }
     
     func finishLoadingItems() {
         self.hideLoader()
-        self.tableView.refreshControl?.endRefreshing()
+        if #available(iOS 10.0, *) {
+            self.tableView.refreshControl?.endRefreshing()
+        } else {
+            // Fallback on earlier versions
+        }
         UIView.animate(withDuration: 0.3, animations: {
             self.tableView.contentOffset = CGPoint.zero
         })

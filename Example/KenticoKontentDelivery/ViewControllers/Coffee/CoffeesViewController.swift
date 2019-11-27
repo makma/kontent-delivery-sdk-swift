@@ -141,7 +141,11 @@ class CoffeesViewController: ListingBaseViewController, UITableViewDelegate, UIT
     
     func finishLoadingItems() {
         self.hideLoader()
-        self.tableView.refreshControl?.endRefreshing()
+        if #available(iOS 10.0, *) {
+            self.tableView.refreshControl?.endRefreshing()
+        } else {
+            // Fallback on earlier versions
+        }
         UIView.animate(withDuration: 0.3, animations: {
             self.tableView.contentOffset = CGPoint.zero
         })

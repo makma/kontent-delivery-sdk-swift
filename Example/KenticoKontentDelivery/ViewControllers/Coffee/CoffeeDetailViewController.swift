@@ -63,7 +63,7 @@ class CoffeeDetailViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension;
+        return UITableViewAutomaticDimension;
     }
     
     // MARK: Outlet actions
