@@ -7,6 +7,6 @@
 //
 
 struct CloudConstants {
-    static let liveDeliverEndpoint = "https://deliver.kenticocloud.com"
+    static let liveDeliverEndpoint = "https://deliver.kontent.ai"
     static let previewDeliverEndpoint = "https://preview-deliver.kenticocloud.com"
 }

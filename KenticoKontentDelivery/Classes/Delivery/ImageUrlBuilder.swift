@@ -8,7 +8,7 @@
 
 /**
  A helper class to build image transformation URL.
- Read https://developer.kenticocloud.com/v1/reference#image-transformation before using this URL builder,
+ Read https://docs.kontent.ai/reference/image-transformation before using this URL builder,
  because the builder will not validate the parameter.
  */
 public class ImageUrlBuilder {
